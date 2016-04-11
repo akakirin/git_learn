@@ -67,3 +67,35 @@ git checkout -- yiweivol1.php    #把工作区的修改全撤销，或者把add�
 
 git reset HEAD yiweivol1.php
 git checkout -- yiweivol1.php
+
+
+
+#删除操作
+git add 11.txt
+git commit -m "add 11 txt"   #用这两步上传11.txt到版本库
+
+rm 11.txt                    #删除该txt文件，但只是在工作区删除，版本库中还有
+
+#想倒回时
+git checkout -- 11.txt
+
+#想彻底删除时
+
+git rm 11.txt
+git commit -m "remove 11 from git"
+
+
+#杀手级功能：远程仓库！
+  #连接github
+  ssh-keygen -t rsa -C "wjy19910207@126.com"    #创建SSHkey，在默认的目录下生成两个文件，id_rsa为公钥，id_rsa.pub为公钥
+  #在github上点ssh key，将id_rsa.pub中内容复制，确认即可，可以提交多台设备的ssh key
+
+
+  
+
+  
+
+
+
+
+
