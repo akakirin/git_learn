@@ -91,7 +91,15 @@ git commit -m "remove 11 from git"
   #在github上点ssh key，将id_rsa.pub中内容复制，确认即可，可以提交多台设备的ssh key
 
 
-  
+#在本地建立后，推送到远程github上
+#首先在github上创立repository，名字选的和本地库一样，然后用一下两个命令：
+git remote add origin https://github.com/akakirin/git_learn.git   #关联远程库
+git push -u origin master                                         #进行master分支的推送和远程、本地master分支的关联
+
+git push origin master           #之后，改动的文件用这个推送就好啦，不需要-u了就
+
+#从github上克隆
+git clone git@github.com:akakirin/git_learn.git  #这是另一种方式
 
   
 
