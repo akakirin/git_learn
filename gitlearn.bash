@@ -101,6 +101,7 @@ git push origin master           #之后，改动的文件用这个推送就好�
 #从github上克隆
 git clone git@github.com:akakirin/git_learn.git  #这是另一种方式
 
+#出现问题，test一下
   
 
 
