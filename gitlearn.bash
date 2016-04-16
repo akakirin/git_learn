@@ -101,8 +101,13 @@ git push origin master           #之后，改动的文件用这个推送就好�
 #从github上克隆
 git clone git@github.com:akakirin/git_learn.git  #这是另一种方式
 
-#出现问题，test一下
-ff
+#push时出现报错，其实是因为本地没有readme，使用以下代码：
+git pull --rebase origin master
+#之后再push就好了
+
+#之后出现RPCfailed，这是因为文件大小受限，打开文件夹中隐藏的.git文件夹，在config文件后加上：
+[http]  
+    postBuffer = 524288000 
   
 
 
